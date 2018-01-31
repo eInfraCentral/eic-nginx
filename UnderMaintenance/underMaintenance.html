@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!--     <base href="/"> -->
+    <title>eInfraCentral Platform</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://einfracentral.eu/sites/default/files/favicon.png" type="image/png">
+
+    <!-- stylesheets -->
+    <!-- <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" > -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!--<link href="css/theme.rtl.css" rel="stylesheet">-->
+    <link href="./css/theme.css" rel="stylesheet">
+    <link href="./css/theme.update.css" rel="stylesheet">
+    <link href="./css/wk-styles.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./js/uikit-3/js/uikit.min.js"></script>
+    <script src="./js/theme.js"></script>
+    <!--<script src="js/uikit.js" ></script>-->
+    <!--<script src="js/sticky.js" ></script>-->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/europe.js"></script>
+
+</head>
+
+<body>
+
+<div class="uk-offcanvas-content">
+
+    <div class="tm-header-mobile uk-hidden@m">
+    <nav class="uk-navbar-container uk-navbar" uk-navbar="">
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="/search">
+                <img alt="eInfraCentral" class="uk-responsive-height" src="imgs/einfracentral_logo_horizontal.png">
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="tm-header uk-visible@m" uk-header="">
+    <div class="uk-navbar-container uk-sticky uk-sticky-fixed" cls-active="uk-active uk-navbar-sticky" media="768" style="position: fixed; top: 0px; width: 1436px;" uk-sticky="">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;}">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" routerlink="/home" href="/home">
+                        <img alt="eInfraCentral" class="uk-responsive-height" src="imgs/einfracentral_logo_horizontal.png" style="width: 250px">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="uk-section-secondary uk-position-relative" uk-scrollspy="{&quot;target&quot;:&quot;[uk-scrollspy-class]&quot;,&quot;cls&quot;:&quot;uk-animation-fade&quot;,&quot;delay&quot;:false}">
+    <div class="uk-background-norepeat uk-background-cover uk-background-fixed uk-section uk-padding-remove-bottom uk-flex uk-flex-middle" style="background-image: url(&quot;./imgs/iStock-629814372.jpg&quot;); background-color: rgb(255, 255, 255); box-sizing: border-box; min-height: calc(-191px + 100vh); height: calc(-191px + 100vh);" uk-height-viewport="offset-top: true;offset-bottom: 20">
+        <div class="uk-position-cover" style="background-color: rgba(31, 55, 97, 0.53);"></div>
+        <div class="uk-width-1-1">
+            <div class="uk-position-relative">
+                <div class="uk-container uk-margin-large">
+                    <div class="search_box_bg uk-grid-large uk-flex-middle uk-grid uk-grid-stack" uk-grid="">
+                        <div class="uk-width-1-1@m uk-first-column">
+                            <h2 class="uk-margin-medium uk-margin-remove-top uk-text-center uk-h2 uk-scrollspy-inview" style="" uk-scrollspy-class="">
+                                We'll be back soon!
+                            </h2>
+                            <div>
+                            	<div class="contentText" style="font-size: 18px; text-align:center">Sorry for the inconvenience but we're performing some maintenance at the moment. 
+									If you need you can always <a target="_blank" href="http://einfracentral.eu/contact">contact us</a>, otherwise we'll be back online shortly!                   
+								</div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <feedback _nghost-c0=""><div _ngcontent-c0="" class="uk-tooltip" id="feedback">
+    <a _ngcontent-c0="" class="btn btn-info btn-lg" target="_blank" type="button" href="https://docs.google.com/forms/d/1WOQDx2wRZRiw9jlA8l1A54tMki8FwUV8fs9iXO_kcmg/edit">
+        <img _ngcontent-c0="" alt="Feedback" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI5LjI5OXB4IiBoZWlnaHQ9IjUwLjYyNXB4IiB2aWV3Qm94PSIwIDAgOS4yOTkgNTAuNjI1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA5LjI5OSA1MC42MjUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zLjUxNiw0Ni44N3YxLjYzNWg1LjY2N3YwLjk3NEgzLjUxNnYxLjE0N2gtMC40NGwtMC4zNTItMS4xNDdIMi4zNjdDMC43ODksNDkuNDc4LDAsNDguNzg4LDAsNDcuNDA5YzAtMC4zNCwwLjA2OC0wLjczOCwwLjIwNS0xLjE5NWwwLjc3OSwwLjI1MmMtMC4xMjEsMC4zNzUtMC4xODIsMC42OTUtMC4xODIsMC45NjFjMCwwLjM2NywwLjEyMiwwLjY0LDAuMzY2LDAuODE0YzAuMjQ0LDAuMTc2LDAuNjM2LDAuMjY0LDEuMTc1LDAuMjY0SDIuNzZWNDYuODdIMy41MTZ6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTkuMjk5LDQyLjk4NWMwLDAuOTQ5LTAuMjg5LDEuNjk3LTAuODY2LDIuMjQ2Yy0wLjU3OCwwLjU0OS0xLjM4MiwwLjgyNC0yLjQwOCwwLjgyNGMtMS4wMzYsMC0xLjg1Ny0wLjI1Ni0yLjQ2Ny0wLjc2NmMtMC42MS0wLjUxMS0wLjkxNC0xLjE5My0wLjkxNC0yLjA1NGMwLTAuODA1LDAuMjY1LTEuNDQsMC43OTQtMS45MDljMC41MjktMC40NywxLjIyOC0wLjcwMywyLjA5NS0wLjcwM2gwLjYxNXY0LjQyNGMwLjc1NC0wLjAyMSwxLjMyNi0wLjIxMSwxLjcxNy0wLjU3MlM4LjQ1LDQzLjYwNiw4LjQ1LDQyLjk1YzAtMC42OTEtMC4xNDUtMS4zNzUtMC40MzQtMi4wNTFoMC44NjZjMC4xNDgsMC4zNDQsMC4yNTUsMC42NjgsMC4zMTksMC45NzVDOS4yNjcsNDIuMTgxLDkuMjk5LDQyLjU1MSw5LjI5OSw0Mi45ODV6IE0zLjQ1Nyw0My4yNDljMCwwLjUxNywwLjE2OCwwLjkyNiwwLjUwNCwxLjIzMnMwLjgwMSwwLjQ4OCwxLjM5NiwwLjU0M3YtMy4zNTdjLTAuNjEzLDAtMS4wODMsMC4xMzgtMS40MSwwLjQxQzMuNjIxLDQyLjM1LDMuNDU3LDQyLjc0MSwzLjQ1Nyw0My4yNDl6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTkuMjk5LDM2LjI1MmMwLDAuOTQ5LTAuMjg5LDEuNjk3LTAuODY2LDIuMjQ2Yy0wLjU3OCwwLjU0OS0xLjM4MiwwLjgyNC0yLjQwOCwwLjgyNGMtMS4wMzYsMC0xLjg1Ny0wLjI1Ni0yLjQ2Ny0wLjc2NmMtMC42MS0wLjUxLTAuOTE0LTEuMTkzLTAuOTE0LTIuMDUzYzAtMC44MDUsMC4yNjUtMS40NDEsMC43OTQtMS45MXMxLjIyOC0wLjcwMywyLjA5NS0wLjcwM2gwLjYxNXY0LjQyNGMwLjc1NC0wLjAyLDEuMzI2LTAuMjExLDEuNzE3LTAuNTcyczAuNTg2LTAuODY5LDAuNTg2LTEuNTI1YzAtMC42OTEtMC4xNDUtMS4zNzUtMC40MzQtMi4wNTFoMC44NjZjMC4xNDgsMC4zNDQsMC4yNTUsMC42NjgsMC4zMTksMC45NzZTOS4yOTksMzUuODE5LDkuMjk5LDM2LjI1MnogTTMuNDU3LDM2LjUxNmMwLDAuNTE2LDAuMTY4LDAuOTI2LDAuNTA0LDEuMjMyYzAuMzM2LDAuMzA4LDAuODAxLDAuNDg4LDEuMzk2LDAuNTQzdi0zLjM1N2MtMC42MTMsMC0xLjA4MywwLjEzNy0xLjQxLDAuNDFDMy42MjEsMzUuNjE4LDMuNDU3LDM2LjAwOCwzLjQ1NywzNi41MTZ6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTguMzE5LDI3Ljg2MnYwLjA1M2MwLjY1MiwwLjQ0OSwwLjk3OSwxLjEyMSwwLjk3OSwyLjAxN2MwLDAuODQtMC4yODYsMS40OTMtMC44NiwxLjk2UzcuMDQ3LDMyLjU5LDUuOTg5LDMyLjU5Yy0xLjA1OCwwLTEuODgxLTAuMjMzLTIuNDY3LTAuNzAyYy0wLjU4Ni0wLjQ3LTAuODc5LTEuMTIxLTAuODc5LTEuOTU3YzAtMC44NzEsMC4zMTYtMS41MzksMC45NDktMi4wMDVWMjcuODVsLTAuNDYzLDAuMDQxbC0wLjQ1MSwwLjAyM0gwLjA2NHYtMC45NzRoOS4xMTd2MC43OTFMOC4zMTksMjcuODYyeiBNOC40ODMsMjkuODA3YzAtMC42NjQtMC4xOC0xLjE0Ni0wLjU0MS0xLjQ0NHMtMC45NDQtMC40NDgtMS43NS0wLjQ0OEg1Ljk4N2MtMC45MDksMC0xLjU1OSwwLjE1MS0xLjk0NywwLjQ1NWMtMC4zODgsMC4zMDMtMC41ODMsMC43ODUtMC41ODMsMS40NDljMCwwLjU3LDAuMjIyLDEuMDA4LDAuNjY1LDEuMzExUzUuMTksMzEuNTgzLDYsMzEuNTgzYzAuODE5LDAsMS40MzgtMC4xNDksMS44NTYtMC40NTFDOC4yNzQsMzAuODMxLDguNDgzLDMwLjM4OSw4LjQ4MywyOS44MDd6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIuNjU0LDIxLjg5MWMwLTAuODQ0LDAuMjg4LTEuNDk5LDAuODY0LTEuOTY2YzAuNTc2LTAuNDY3LDEuMzkyLTAuNywyLjQ0Ni0wLjdjMS4wNTUsMCwxLjg3NCwwLjIzNSwyLjQ1OCwwLjcwNmMwLjU4NCwwLjQ3MSwwLjg3NiwxLjEyNCwwLjg3NiwxLjk2YzAsMC40MTgtMC4wNzYsMC44LTAuMjMsMS4xNDZjLTAuMTU0LDAuMzQ2LTAuMzkzLDAuNjM2LTAuNzEzLDAuODd2MC4wN2wwLjgyNiwwLjIwNXYwLjY5N0gwLjA2NHYtMC45NzNoMi4yMTVjMC40OTYsMCwwLjk0MSwwLjAxNiwxLjMzNiwwLjA0N3YtMC4wNDdDMi45NzUsMjMuNDU0LDIuNjU0LDIyLjc4MiwyLjY1NCwyMS44OTF6IE0zLjQ2OSwyMi4wMzJjMCwwLjY2NCwwLjE5LDEuMTQzLDAuNTcxLDEuNDM2czEuMDIyLDAuNDM5LDEuOTI1LDAuNDM5YzAuOTAzLDAsMS41NDgtMC4xNSwxLjkzNy0wLjQ1MWMwLjM5LTAuMzAxLDAuNTg0LTAuNzgzLDAuNTg0LTEuNDQ3YzAtMC41OTgtMC4yMTktMS4wNDMtMC42NTMtMS4zMzZzLTEuMDYyLTAuNDM5LTEuODc4LTAuNDM5Yy0wLjgzNiwwLTEuNDU5LDAuMTQ2LTEuODY5LDAuNDM5UzMuNDY5LDIxLjQxOCwzLjQ2OSwyMi4wMzJ6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTkuMTgzLDEzLjU3N0w4LjI2OSwxMy43N3YwLjA0N2MwLjQwMSwwLjMyLDAuNjc0LDAuNjQsMC44MTYsMC45NThzMC4yMTQsMC43MTYsMC4yMTQsMS4xOTJjMCwwLjYzNy0wLjE2NCwxLjEzNi0wLjQ5MSwxLjQ5N2MtMC4zMjgsMC4zNjEtMC43OTUsMC41NDItMS40LDAuNTQyYy0xLjI5NywwLTEuOTc3LTEuMDM3LTIuMDM5LTMuMTExbC0wLjAzNS0xLjA5SDQuOTM0Yy0wLjUwNCwwLTAuODc2LDAuMTA4LTEuMTE2LDAuMzI1Yy0wLjI0LDAuMjE3LTAuMzYsMC41NjMtMC4zNiwxLjA0YzAsMC41MzUsMC4xNjQsMS4xNDEsMC40OTIsMS44MTZsLTAuNzQ0LDAuMjk5Yy0wLjE3Mi0wLjMxNi0wLjMwNy0wLjY2My0wLjQwNC0xLjA0Yy0wLjA5Ny0wLjM3Ny0wLjE0Ni0wLjc1NS0wLjE0Ni0xLjEzNGMwLTAuNzY2LDAuMTctMS4zMzMsMC41MS0xLjcwMmMwLjM0LTAuMzY5LDAuODg1LTAuNTU0LDEuNjM1LTAuNTU0aDQuMzg0djAuNzIySDkuMTgzeiBNOC40OTYsMTUuNzc0YzAtMC42MDUtMC4xNjYtMS4wODEtMC40OTgtMS40MjdjLTAuMzMyLTAuMzQ2LTAuNzk3LTAuNTE5LTEuMzk2LTAuNTE5aC0wLjU4bDAuMDQxLDAuOTczYzAuMDI3LDAuNzczLDAuMTQ3LDEuMzMxLDAuMzYsMS42NzNjMC4yMTQsMC4zNDIsMC41NDQsMC41MTMsMC45OTMsMC41MTNjMC4zNTIsMCwwLjYxOS0wLjEwNiwwLjgwMy0wLjMxOVM4LjQ5NiwxNi4xNTcsOC40OTYsMTUuNzc0eiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjI5OSw4LjI4NWMwLDAuOTMtMC4yODYsMS42NDktMC44NTgsMi4xNTljLTAuNTcxLDAuNTEtMS4zODEsMC43NjUtMi40MjgsMC43NjVjLTEuMDc1LDAtMS45MDUtMC4yNTktMi40OTEtMC43NzZTMi42NDMsOS4xNzgsMi42NDMsOC4yMjFjMC0wLjMwOSwwLjAzMy0wLjYxNywwLjEtMC45MjZDMi44MSw2Ljk4NiwyLjg4OCw2Ljc0NCwyLjk3Nyw2LjU2OGwwLjgyNiwwLjI5OUMzLjcxNyw3LjA4MiwzLjY0Niw3LjMxNiwzLjU4OSw3LjU3QzMuNTMyLDcuODI0LDMuNTA0LDguMDQ5LDMuNTA0LDguMjQ0YzAsMS4zMDUsMC44MzIsMS45NTcsMi40OTYsMS45NTdjMC43ODksMCwxLjM5Ni0wLjE1OSwxLjgxNS0wLjQ3OGMwLjQyMi0wLjMxOSwwLjYzNC0wLjc5LDAuNjM0LTEuNDE1YzAtMC41MzUtMC4xMTUtMS4wODQtMC4zNDctMS42NDZoMC44NjFDOS4xODgsNy4wOTIsOS4yOTksNy42MzMsOS4yOTksOC4yODV6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTUuODk2LDQuMTc4QzUuNjU2LDQuMDEsNS4zNDQsMy43NTQsNC45NTcsMy40MUwyLjc2LDEuMzM2VjAuMTgybDIuNzM2LDIuNjAyTDkuMTgzLDB2MS4xNzhMNi4xNDYsMy40NDVsMC42MzMsMC43MzJoMi40MDJ2MC45NjFIMC4wNjR2LTAuOTZoNC44MzRjMC4yMTUsMCwwLjU0NiwwLjAxNiwwLjk5NiwwLjA0N1Y0LjE3OEg1Ljg5NnoiLz48L2c+PC9zdmc+" title="Leave us your feedback!" height="70px">
+    </a>
+</div></feedback>
+    <footer _nghost-c1=""><div _ngcontent-c1="" class="uk-section-primary uk-section uk-section-small uk-padding-remove-bottom">
+    <div _ngcontent-c1="" class="uk-container">
+        <div _ngcontent-c1="" class="uk-grid-margin uk-grid" uk-grid="">
+            <div _ngcontent-c1="" class="uk-width-expand@m uk-light uk-first-column">
+                <div _ngcontent-c1="" class="uk-margin">
+                    <div _ngcontent-c1="" class="uk-child-width-auto uk-grid-small uk-grid" uk-grid="">
+                        <div _ngcontent-c1="" class="uk-first-column">
+                            <a _ngcontent-c1="" class="el-link uk-icon-link uk-icon" href="#" target="_blank" uk-icon="icon: facebook"><svg _ngcontent-c1="" height="20" ratio="1" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path _ngcontent-c1="" d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg></a>
+                        </div>
+                        <div _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="el-link uk-icon-link uk-icon" href="https://twitter.com/eInfraCentral" target="_blank" uk-icon="icon: twitter"><svg _ngcontent-c1="" height="20" ratio="1" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path _ngcontent-c1="" d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path></svg></a>
+                        </div>
+                        <div _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="el-link uk-icon-link uk-icon" href="https://www.linkedin.com/groups/13522390" target="_blank" uk-icon="icon: linkedin"><svg _ngcontent-c1="" height="20" ratio="1" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path _ngcontent-c1="" d="M5.77,17.89 L5.77,7.17 L2.21,7.17 L2.21,17.89 L5.77,17.89 L5.77,17.89 Z M3.99,5.71 C5.23,5.71 6.01,4.89 6.01,3.86 C5.99,2.8 5.24,2 4.02,2 C2.8,2 2,2.8 2,3.85 C2,4.88 2.77,5.7 3.97,5.7 L3.99,5.7 L3.99,5.71 L3.99,5.71 Z"></path><path _ngcontent-c1="" d="M7.75,17.89 L11.31,17.89 L11.31,11.9 C11.31,11.58 11.33,11.26 11.43,11.03 C11.69,10.39 12.27,9.73 13.26,9.73 C14.55,9.73 15.06,10.71 15.06,12.15 L15.06,17.89 L18.62,17.89 L18.62,11.74 C18.62,8.45 16.86,6.92 14.52,6.92 C12.6,6.92 11.75,7.99 11.28,8.73 L11.3,8.73 L11.3,7.17 L7.75,7.17 C7.79,8.17 7.75,17.89 7.75,17.89 L7.75,17.89 L7.75,17.89 Z"></path></svg></a>
+                        </div>
+                        <div _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="el-link uk-icon-link uk-icon" href="#" target="_blank" uk-icon="icon: social"><svg _ngcontent-c1="" height="20" ratio="1" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><line _ngcontent-c1="" fill="none" stroke="#000" stroke-width="1.1" x1="13.4" x2="6.3" y1="14" y2="10.7"></line><line _ngcontent-c1="" fill="none" stroke="#000" stroke-width="1.1" x1="13.5" x2="6.5" y1="5.5" y2="8.8"></line><circle _ngcontent-c1="" cx="15.5" cy="4.6" fill="none" r="2.3" stroke="#000" stroke-width="1.1"></circle><circle _ngcontent-c1="" cx="15.5" cy="14.8" fill="none" r="2.3" stroke="#000" stroke-width="1.1"></circle><circle _ngcontent-c1="" cx="4.5" cy="9.8" fill="none" r="2.3" stroke="#000" stroke-width="1.1"></circle></svg></a>
+                        </div>
+                        <div _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="el-link uk-icon-link uk-icon" href="#" target="_blank" uk-icon="icon: vimeo"><svg _ngcontent-c1="" height="20" ratio="1" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path _ngcontent-c1="" d="M2.065,7.59C1.84,7.367,1.654,7.082,1.468,6.838c-0.332-0.42-0.137-0.411,0.274-0.772c1.026-0.91,2.004-1.896,3.127-2.688 c1.017-0.713,2.365-1.173,3.286-0.039c0.849,1.045,0.869,2.629,1.084,3.891c0.215,1.309,0.421,2.648,0.88,3.901 c0.127,0.352,0.37,1.018,0.81,1.074c0.567,0.078,1.145-0.917,1.408-1.289c0.684-0.987,1.611-2.317,1.494-3.587 c-0.115-1.349-1.572-1.095-2.482-0.773c0.146-1.514,1.555-3.216,2.912-3.792c1.439-0.597,3.579-0.587,4.302,1.036 c0.772,1.759,0.078,3.802-0.763,5.396c-0.918,1.731-2.1,3.333-3.363,4.829c-1.114,1.329-2.432,2.787-4.093,3.422 c-1.897,0.723-3.021-0.686-3.667-2.318c-0.705-1.777-1.056-3.771-1.565-5.621C4.898,8.726,4.644,7.836,4.136,7.191 C3.473,6.358,2.72,7.141,2.065,7.59C1.977,7.502,2.115,7.551,2.065,7.59L2.065,7.59z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-c1="" class="newsletter uk-margin uk-margin-remove-bottom uk-text-left uk-panel">
+                    <h6 _ngcontent-c1="" class="el-title uk-h3 uk-margin uk-display-inline">Newsletter</h6>
+                    <a _ngcontent-c1="" class="el-link" href="http://einfracentral.eu/news/"><span _ngcontent-c1="" class="el-image uk-icon" uk-icon="icon: comments;ratio: 1.5"><svg _ngcontent-c1="" height="30" ratio="1.5" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><polyline _ngcontent-c1="" fill="none" points="2 0.5 19.5 0.5 19.5 13" stroke="#000"></polyline><path _ngcontent-c1="" d="M5,19.71 L5,15 L0,15 L0,2 L18,2 L18,15 L9.71,15 L5,19.71 L5,19.71 L5,19.71 Z M1,14 L6,14 L6,17.29 L9.29,14 L17,14 L17,3 L1,3 L1,14 L1,14 L1,14 Z"></path></svg></span></a>
+                </div>
+                <div _ngcontent-c1="" class="newsletter uk-panel">Subscribe</div>
+            </div>
+            <div _ngcontent-c1="" class="uk-width-expand@m uk-light">
+                <div _ngcontent-c1="">
+                    <ul _ngcontent-c1="" class="uk-subnav uk-margin-remove-bottom uk-subnav-divider" uk-margin="">
+                        <li _ngcontent-c1="" class="el-item uk-first-column">
+                            <a _ngcontent-c1="" class="el-link" href="http://einfracentral.eu/basic-page/about-einfracentral" target="_blank">About</a>
+                        </li>
+                        <li _ngcontent-c1="" class="el-item">
+                            <a _ngcontent-c1="" class="el-content" href="http://einfracentral.eu" target="_blank">Project</a>
+                        </li>
+                        <li _ngcontent-c1="" class="el-item">
+                            <a _ngcontent-c1="" class="el-content" href="http://einfracentral.eu/news" target="_blank">News</a>
+                        </li>
+                        <li _ngcontent-c1="" class="el-item">
+                            <a _ngcontent-c1="" class="el-content" href="http://einfracentral.eu/contact" target="_blank">Contact</a>
+                        </li>
+                        <li _ngcontent-c1="" class="el-item">
+                            <a _ngcontent-c1="" class="el-content" href="http://einfracentral.eu/sites/default/files/Privacy%20Policy_Website_eInfraCentral_V0.pdf" target="_blank">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div _ngcontent-c1="" class="uk-section-primary uk-section uk-section-xsmall uk-padding-remove-bottom">
+    <div _ngcontent-c1="" class="uk-container">
+        <div _ngcontent-c1="" class="uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+            <div _ngcontent-c1="" class="uk-width-1-1@m uk-first-column">
+                <div _ngcontent-c1="" class="uk-margin-medium uk-margin-remove-bottom uk-text-center">
+                    <img _ngcontent-c1="" alt="eInfraCentral" class="el-image" src="imgs/einfracentral_logo_horizontal_white.png" width="200px">
+                </div>
+                <div _ngcontent-c1="" class="uk-margin uk-margin-remove-bottom uk-text-center">
+                    <div _ngcontent-c1="">
+                        This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 731049
+                    </div>
+                <div _ngcontent-c1="" class="uk-margin uk-text-center">
+                    <img _ngcontent-c1="" alt="European Commission" class="el-image" sizes="(min-width: 114px) 114px, 100vw" src="./imgs/ec_logo_inv_small-4aa7cf58.png" srcset="./imgs/ec_logo_inv_small-e4d7de03.png 91w, ./imgs/ec_logo_inv_small-4aa7cf58.png 114w">
+                </div>
+                
+                    
+                
+            </div>
+        </div>
+    </div>
+</div></div></footer>
+</div>
+
+</body>
+</html>
