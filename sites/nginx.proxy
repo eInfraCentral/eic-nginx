@@ -1,0 +1,15 @@
+server {
+    listen 80;
+    server_name vereniki.athenarc.gr;
+    client_max_body_size 256M;
+    access_log            /var/log/nginx/dev.access.log;
+    location / {
+        proxy_set_header        Host $host;
+        proxy_set_header        X-Real-IP $remote_addr;
+        proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header        X-Forwarded-Proto $scheme;
+        proxy_pass          http://194.177.192.118:3000;
+        proxy_read_timeout  90;
+    }
+}
+
