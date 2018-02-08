@@ -15,6 +15,10 @@ enable() {
     ${sites} clean
     sudo ln -s ${avail}nginx.${1} ${enab}nginx.${1}
     ${sites} restart
+    sudo mkdir -p ${www}
+    sudo mv ${www} ${www}.$(date +%s)
+    sudo mkdir -p ${www}
+    sudo cp -R ../${1}/* ${www}
 }
 
 case $1 in
@@ -23,16 +27,6 @@ case $1 in
     ;;
     enable)
         enable $2
-        case $2 in
-            proxy)
-            ;;
-            maintenance)
-                sudo mkdir -p ${www}
-                sudo mv ${www} ${www}.$(date +%s)
-                sudo mkdir -p ${www}
-                sudo cp -R ../UnderMaintenance/* ${www}
-            ;;
-        esac
     ;;
     clean)
         sudo rm ${enab}*
