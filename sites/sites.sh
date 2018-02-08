@@ -6,7 +6,7 @@ www=/usr/share/nginx/html
 avail=${root}sites-available/
 enab=${root}sites-enabled/
 
-install() {
+add() {
     sudo cp nginx.${1} ${avail}nginx.${1}
     sudo nano ${avail}nginx.${1}
 }
@@ -18,8 +18,8 @@ enable() {
 }
 
 case $1 in
-    install)
-        install $2
+    add)
+        add $2
     ;;
     enable)
         enable $2
