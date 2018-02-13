@@ -3,6 +3,13 @@ server {
     server_name vereniki.athenarc.gr;
     client_max_body_size 256M;
     access_log            /var/log/nginx/dev.access.log;
+#    root /usr/share/nginx/html;
+#    location /piwik/ {
+#        location ~ /piwik/(.*\.php)(/.*)?$ {
+#                fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+#       }
+#        try_files $uri /piwik/index.php$is_args$args;
+#    }
     location / {
         proxy_set_header        Host $host;
         proxy_set_header        X-Real-IP $remote_addr;
@@ -12,4 +19,3 @@ server {
         proxy_read_timeout  90;
     }
 }
-
