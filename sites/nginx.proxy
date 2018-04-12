@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name vereniki.athenarc.gr;
+    server_name beta.einfracentral.eu;
     client_max_body_size 256M;
     access_log            /var/log/nginx/dev.access.log;
 #    root /usr/share/nginx/html;
