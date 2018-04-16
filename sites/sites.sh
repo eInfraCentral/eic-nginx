@@ -31,8 +31,10 @@ case $1 in
     clean)
         sudo rm ${enab}*
     ;;
-    install)
+    setup)
         sudo apt install nginx
+        ${sites} add proxy
+        ${sites} add maintenance
     ;;
     restart)
         sudo service nginx restart
